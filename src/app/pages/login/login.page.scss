@@ -1,0 +1,69 @@
+
+$color-dominante: #effaff;
+$color-complementario: #358c83;
+$color-terciario: #FFC000;
+
+
+
+
+
+.fondo{
+
+    --ion-background-color: #effaff;
+}
+
+
+
+
+.caja{
+    background-color: #4682b4;
+ 
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    --ion-input: #f1ee08;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+ion-input{
+    justify-content: center;
+    display: flex;
+    color: #effaff;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+ion-button{
+    position: relative;
+    margin: 20px;
+}
+
+.links-secundarios{
+    color: #c4c3be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+ion-toolbar{
+    --ion-background-color: #4682b4;
+    --ion-text-color: #effaff;
+}
+
+
+.error-messages-container {
+    display: block; /* Asegura que los mensajes estén en formato vertical */
+    color: red; /* Color de texto en rojo u otro color deseado */
+    margin-top: 5px; /* Espacio superior entre mensajes (ajusta según sea necesario) */
+  }
+  

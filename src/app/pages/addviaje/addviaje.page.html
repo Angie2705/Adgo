@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Botón del menú a la izquierda -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <!-- Título con imagen a la izquierda -->
+    <ion-title slot="start" style="display: flex; align-items: center;">
+      Ingresar Viaje
+    </ion-title>
+    
+    <!-- Avatar a la derecha -->
+    <ion-avatar slot="end">
+      <img [routerLink]="['/pprincipal']"  alt="Avatar" src="https://cdn.discordapp.com/attachments/1143004800951275550/1145132206319214653/Sin_titulo2.png" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class ="fondo" [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">addviaje</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-card class="caja">
+
+    <ion-input label="Desde" label-placement="floating" fill="outline" placeholder="Plaza Norte"></ion-input>
+    <ion-input label="Hacia" label-placement="floating" fill="outline" placeholder="Costanera Center"></ion-input>
+    <ion-select label="Asientos Disponibles" label-placement="floating" fill="outline">
+      <ion-select-option value="1">1</ion-select-option>
+      <ion-select-option value="2">2</ion-select-option>
+      <ion-select-option value="3">3</ion-select-option>
+    </ion-select>
+
+    <ion-datetime presentation="date-time" [preferWheel]="true"></ion-datetime>
+    
+
+
+    <br>
+
+    <ion-button shape="round">Ingresar Viaje</ion-button>
+    <ion-button shape="round" [routerLink]="['/']">Volver</ion-button>
+    <br>
+    
+  </ion-card>
+
+</ion-content>

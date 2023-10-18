@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Botón del menú a la izquierda -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <!-- Título con imagen a la izquierda -->
+    <ion-title slot="start" style="display: flex; align-items: center;">
+      Informacion Viaje
+    </ion-title>
+    
+    <!-- Avatar a la derecha -->
+    <ion-avatar slot="end">
+      <img [routerLink]="['/pprincipal']" alt="Avatar" src="https://cdn.discordapp.com/attachments/1143004800951275550/1145132206319214653/Sin_titulo2.png" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">infoviaje2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card class="caja">
+
+    <ion-card-header>
+
+      <ion-card-title>En 10 minutos</ion-card-title>
+      
+    </ion-card-header>
+    <ion-card-content class="colorletra">
+      <ion-icon name="flag"></ion-icon> Linares 3028 
+      <ion-icon name="arrow-forward-circle"></ion-icon> Cerro Sancristobal
+
+    </ion-card-content>
+    <ion-card-content class="colorletra">
+     
+        <h1>Conductora: Liliana Fuentes</h1>
+     
+
+      <img src="assets/icon/conductor3.jpeg"/>
+
+      <h2>Asientos disponibles: 2</h2>
+      <h2>Monto: $10.000</h2>
+      <h2>Patente: LFBN 29</h2>
+    </ion-card-content>
+
+
+
+    <ion-button shape="round" color="success">Tomar asiento</ion-button>
+  </ion-card>
+
+  <br>
+
+
+</ion-content>

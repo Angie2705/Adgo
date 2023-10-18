@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Botón del menú a la izquierda -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <!-- Título con imagen a la izquierda -->
+    <ion-title slot="start" style="display: flex; align-items: center;">
+      Informacion viaje
+    </ion-title>
+    
+    <!-- Avatar a la derecha -->
+    <ion-avatar slot="end">
+      <img [routerLink]="['/pprincipal']"  alt="Avatar" src="https://cdn.discordapp.com/attachments/1143004800951275550/1145132206319214653/Sin_titulo2.png" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">infoviaje2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card class="caja">
+
+    <ion-card-header>
+
+      <ion-card-title>En 10 minutos</ion-card-title>
+      
+    </ion-card-header>
+    <ion-card-content class="colorletra">
+      <ion-icon name="flag"></ion-icon> Mall Barrio Independencia 
+      <ion-icon name="arrow-forward-circle"></ion-icon> Parque Arauco
+
+    </ion-card-content>
+    <ion-card-content class="colorletra">
+     
+        <h1>Conductor: Enrrique Gomez</h1>
+     
+
+      <img src="assets/icon/conductor2.jpeg"/>
+
+      <h2>Asientos disponibles: 3</h2>
+      <h2>Monto: $5.000</h2>
+      <h2>Patente: XYPQ 01</h2>
+    </ion-card-content>
+
+
+
+    <ion-button shape="round" color="success">Tomar asiento</ion-button>
+  </ion-card>
+
+  <br>
+
+
+</ion-content>

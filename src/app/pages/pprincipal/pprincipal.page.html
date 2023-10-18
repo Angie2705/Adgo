@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Botón del menú a la izquierda -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Título con imagen a la izquierda -->
+    <ion-title slot="start" style="display: flex; align-items: center;">
+      Inicio
+    </ion-title>
+
+    <!-- Avatar a la derecha -->
+    <ion-avatar slot="end">
+      <img alt="Avatar"
+        src="https://cdn.discordapp.com/attachments/1143004800951275550/1145132206319214653/Sin_titulo2.png" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">pag Principal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+
+
+  <ion-card *ngFor="let v of viajes" class="caja">
+
+    <ion-card-header>
+      <ion-card-title>{{v.horasalida}}</ion-card-title>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon name="flag"></ion-icon>{{v.desde | uppercase}} <ion-icon name="arrow-forward-circle"></ion-icon>{{v.hacia | uppercase}}
+    </ion-card-content>
+    <ion-card-content>
+      {{v.marca | uppercase}}
+    </ion-card-content>
+    <img alt="Silhouette of mountains"
+      src="{{v.img}}" />
+    <br>
+    <ion-button [routerLink]="['/infoviaje']">Ver información</ion-button>
+    <br>
+  </ion-card>
+
+  
+
+
+  
+
+  
